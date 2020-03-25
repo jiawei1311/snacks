@@ -1,4 +1,4 @@
-# cloth
+# snacks
 
 > Nuxt.js project
 
