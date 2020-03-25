@@ -1,0 +1,33 @@
+@import "../common";
+
+.card-goods {
+  background-color: #fff;
+  &__item {
+    display: flex;
+    flex-direction: row;
+    padding:10px 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    .img{
+      width: 100px;
+      height: 70px;
+      margin-right: 20px;
+      background-size: cover;
+      background-position: center;
+      background-image: url('../assets/images/meat.jpg')
+    }
+    .content{
+      width: 80%;
+      overflow: hidden;
+    }
+    .geshu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .money{
+        color: red;
+        font-size: 18px;
+      }
+    }
+  }
+}

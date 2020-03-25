@@ -1,0 +1,99 @@
+@import "../common";
+.top{
+  position: relative;
+  height: 370px;
+}
+z-fenlei{
+  height: $fenleiHeight;
+}
+.recommend{
+  background: white;
+  margin-top: 20px;
+  padding:10px 20px;
+  .recommendTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .titleName{
+      font-size: 18px;
+      font-weight: 600;
+      i{
+        color: yellow;
+        font-size: 24px;
+      }
+      img{
+        width: 30px;
+        vertical-align: bottom;
+      }
+    }
+    .refresh{
+      margin-top: 3px;
+
+      text-align: center;
+      img{
+        width: 20px;
+        vertical-align: bottom;
+      }
+    }
+  }
+  .Rone{
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow:4px 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .tuijianNeirongImage{
+      background-image: url("../assets/images/meat.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+    }
+    .re{
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 60px;
+      width: 60px;
+    }
+    .hotContent{
+      position: absolute;
+      height: 60px;
+      background: rgba(255,255,255,.8);
+      width: 100%;
+      bottom: 0;
+      color: black;
+      padding-top: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .money{
+        span{
+          font-size: 36px;
+        }
+        font-size: 18px;
+        color: red;
+        line-height: 50px;
+        width: 20%;
+      }
+      .van-icon{
+        color: red;
+        margin-right: 5px;
+      }
+      .name{
+        font-size: 17px;
+        width: 200px;
+        @include ellipsis;
+      }
+    }
+
+  }
+
+}

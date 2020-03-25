@@ -1,0 +1,23 @@
+@import "./changyong";
+@import "./common";
+@import "./theme";
+input{color:#fff;}
+input::-webkit-input-placeholder{color:#fff;}
+#app{
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background: whitesmoke;
+  color: $PrimaryBlack;
+  //min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.btn{
+  background: $PrimaryColorLG;
+  border-radius: 50px;
+  padding: 7px;
+  text-align: center;
+  color: $SecondaryWhite;
+}

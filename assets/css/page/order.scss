@@ -1,0 +1,135 @@
+@import "../common";
+#shopCar{
+  padding-top: 20px;
+  background: linear-gradient(-45deg,
+    rgb(244, 206, 203),
+    rgba(255,255,255,0.1),
+    rgb(177, 226, 230));
+}
+.yd-scrolltab{
+  bottom: 56px;
+}
+.one{
+  border-bottom: 1px solid #ccc;
+  height: 80px;
+  .lr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+
+    .img{
+      background-size: cover;
+      background-position: center;
+      width: 40%;
+      height: 60px;
+      background-image: url('../assets/images/meat.jpg')
+    }
+    .text{
+      width: 50%;
+      div{
+        @include ellipsis;
+      }
+      .xiaoshou{
+        font-size: 12px;
+        color: #ccc;
+      }
+
+      .money{
+        color: red;
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        span{
+          font-size: 12px;
+        }
+        .number{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          text-align: center;
+          align-items: center;
+          div{
+            margin:0 5px;
+          }
+          .number1{
+            color: black;
+            text-align: start;
+            font-size: 12px;
+
+          }
+          .jia{
+            color: rgb(37, 150, 241);
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.shopCar{
+  .fenlei{
+    display: flex;
+    flex-direction: row;
+    background: white;
+    justify-content: space-around;
+    text-align: center;
+    margin:0 20px;
+    border-radius: 5px;
+    padding: 10px 0;
+
+    .fenleiOne{
+      color: rgb(37, 150, 241);
+      i{
+        font-size: 24px;
+      }
+      img{
+        width: 28px;
+      }
+      width: 30%;
+      border-right: 1px solid #ccc;
+    }
+    .fenleiOne:last-child{
+      border-right: none;
+    }
+
+
+  }
+  .content{
+    text-align: center;
+    margin-top: 20px;
+    .fengexian{
+      border: 0 solid #ccc;
+      width: 50%;
+      margin: 0 auto;
+    }
+    .neirong{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 10px;
+
+      .neirongOne{
+        width: 30%;
+        margin-left: 3%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+        .img{
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 70px;
+          background-image: url('../assets/images/meat.jpg')
+        }
+        .text{
+          background: white;
+        }
+      }
+
+    }
+
+  }
+}
